@@ -1,4 +1,4 @@
-FROM nvidia/cuda:12.1.0-runtime-ubuntu18.04
+FROM nvidia/cuda:12.2.2-runtime-ubuntu20.04
 
 RUN rm /etc/apt/sources.list.d/cuda.list
 
