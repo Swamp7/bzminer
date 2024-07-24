@@ -7,6 +7,8 @@ RUN apt update \
     && wget https://github.com/bzminer/bzminer/releases/download/v21.4.0/bzminer_v21.4.0_linux.tar.gz \
     && tar xvzf bzminer_v21.4.0_linux.tar.gz \
     && rm bzminer_v21.4.0_linux.tar.gz
+    && ln -s libOpenCL.so.1 /lib/x86_64-linux-gnu/libOpenCL.so
+    && ln -s libnvidia-ml.so.1 /lib/x86_64-linux-gnu/libnvidia-ml.so
 
 WORKDIR /bzminer_v21.4.0_linux
 
